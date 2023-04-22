@@ -18,6 +18,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 //config router
 app.use("/users", userRouter);
 app.use("/", indexRouters);
+
 app.listen(3000, () => {
   console.log("server is running http://localhost:3000/");
 });
