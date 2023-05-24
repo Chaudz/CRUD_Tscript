@@ -4,7 +4,7 @@ import { authenMiddleware } from "../middleware/authen";
 
 const router = Router();
 
-router.get("/", authenMiddleware, userController.index);
+router.get("/", userController.index);
 router.get("/:id", userController.show);
 router.post("/", userController.create);
 router.delete("/:id", userController.remove);
